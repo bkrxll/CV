@@ -1,0 +1,137 @@
+::-webkit-scrollbar {
+  /* chrome based */
+  width: 0px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 18px;
+  font-family: "Raleway", sans-serif;
+  min-width: 290px;
+  width: 80%;
+  width: auto;
+  background: DarkGray;
+  line-height: 1.5; /*Расстояние между строками*/
+}
+#main-doc {
+  position: absolute;
+  margin-left: 350px;
+  margin-bottom: 110px;
+  padding-bottom: 20px;
+}
+#navbar h3 {
+  text-align: center;
+  padding: 0;
+}
+#content {
+  width: auto;
+  margin-left: 10px;
+  margin-right: 10px;
+  position: static;
+  z-index: 2;
+  
+}
+#photo {
+  max-width: 300px;
+  min-width: 10vw;
+  height: auto;
+  align-items: center;
+  
+  
+}
+#about_me_local {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  width: auto;
+  height: auto;
+  grid-gap: 50px;
+  
+  justify-items: start;
+  align-items: center;
+}
+#about_me_photo {
+    width: 300px;
+    height: auto;
+    
+}
+#about_me_text {
+    width: auto;
+  height: auto;
+    text-align: center;
+    
+    
+}
+code {
+  font-family: "Comic Neue", cursive;
+}
+pre {
+  margin-left: 20px;
+}
+
+#navbar {
+  background: DarkGray;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  border-top: none;
+  border-left: none;
+  margin-top: 0px;
+ 
+  top: 0px;
+}
+#navbar_div {
+    width: 250px;
+}
+.nav-link {
+  border-top: dotted;
+  border-width: 1px;
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: black;
+}
+#bar {
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+@media only screen and (max-width: 900px) {
+  /* For mobile phones: */
+
+  #navbar {
+    background: LightGray;
+    position: absolute;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-height: 270px;
+    z-index: 1;
+    border-bottom: 1px solid;
+  }
+  
+ 
+
+  #about_me_photo {
+    width: 250px;
+    height: auto;
+    
+}
+
+#photo {
+    width: 250px;
+    height: auto;
+}
+  
+  #main-doc {
+    position: relative;
+    margin-left: 10px;
+    margin-top: 290px;
+  }
+  #navbar h3 {
+    text-align: center;
+  }
+}
